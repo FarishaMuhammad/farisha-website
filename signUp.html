@@ -66,7 +66,7 @@
 </head>
 <body>
 
-  <form action="#" method="post">
+  <form id="signupForm" action="https://github.com/FarishaMuhammad/farisha-website/signIn.html" method="post">
     <table>
       <tr>
         <th colspan="2">Sign Up Form</th>
@@ -104,12 +104,18 @@
       </tr>
       <tr>
         <td colspan="2">
-          <button type="submit">Sign Up</button>
+          <button type="submit" onclick="showNotification()">Sign Up</button>
           <button type="reset">Reset</button>
         </td>
       </tr>
     </table>
   </form>
+
+  <script>
+    function showNotification() {
+      alert("Sign up successful!");
+    }
+  </script>
 
 </body>
 </html>
