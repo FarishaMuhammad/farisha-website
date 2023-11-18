@@ -9,10 +9,10 @@ function loadHeader() {
         
             <nav>
                 <ul>
-                    <li><a href="biography.html" class="nav-link"> Biography </a></li>
-                    <li><a href="timetable.html" class="nav-link"> Timetable </a></li>
-                    <li><a href="galleries.html" class="nav-link"> Galleries </a></li>
-                    <li><a href="downloads.html" class="nav-link"> Download </a></li>
+                    <li><a href="https://farishamuhammad.github.io/farisha-website/biography.html" class="nav-link"> Biography </a></li>
+                    <li><a href="https://farishamuhammad.github.io/farisha-website/timetable.html" class="nav-link"> Timetable </a></li>
+                    <li><a href="https://farishamuhammad.github.io/farisha-website/galleries.html" class="nav-link"> Galleries </a></li>
+                    <li><a href="https://farishamuhammad.github.io/farisha-website/downloads.html" class="nav-link"> Download </a></li>
                     <li>
                         <div class="dropdown" id="linksDropdown"> 
                             <a href="#"> Links </a>
@@ -55,7 +55,7 @@ function loadFooter() {
     // Creating an anchor tag with the copyright symbol and text
     var copyrightLink = document.createElement('a');
     copyrightLink.innerHTML = '&copy; 2023 Farisha\'s Website. All rights reserved.';
-    copyrightLink.href = 'HP.html'; // Replace with your desired URL
+    copyrightLink.href = 'https://farishamuhammad.github.io/farisha-website/HP.html'; //
 
     // Adding a click event listener to handle the redirect
     copyrightLink.addEventListener('click', function (event) {
