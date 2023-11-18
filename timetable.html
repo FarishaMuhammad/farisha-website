@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farisha's Timetable</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9e1e1; /* Soft pink background color */
+            color: #333; /* Text color */
+            margin: 0;
+        }
+
+        .timetable-section, .course-info-section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* White background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            border-radius: 10px;
+        }
+
+        .timetable-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .timetable-section h1 {
+          color: #ff69b4;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .course-info-section h1 {
+            color: #ff69b4; /* Pink text color for headings */
+        }
+
+        .highlighted {
+            background-color: #ff69b4; /* Highlight color */
+            color: #fff; /* Text color on highlight */
+        }
+</style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="headerAndFooter.js" defer></script>
+    <script src="scripts/script.js"></script>
+</head>
+	<body>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				loadHeader();
+                // Add this JavaScript code for highlighting the pressed link
+                const links = document.querySelectorAll('.timetable-table a');
+
+  links.forEach(link => {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Remove 'highlighted' class from all links
+        links.forEach(otherLink => otherLink.classList.remove('highlighted'));
+        document.querySelectorAll('.course-info-section div').forEach(courseInfo => {
+                    courseInfo.classList.remove('highlighted');
+                });
+
+        // Add 'highlighted' class to the clicked link
+        link.classList.add('highlighted');
+
+         // Add 'highlighted' class to the corresponding course info
+         const targetId = link.getAttribute('href').substring(1);
+                const targetCourseInfo = document.getElementById(targetId);
+                if (targetCourseInfo) {
+                    targetCourseInfo.classList.add('highlighted');
+                }
+
+        // Scroll to the target section (assuming you have corresponding divs with IDs)
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+			});
+		</script>
+
+<section class="timetable-section">
+	<center>
+    <table class="timetable-table">
+      <center>
+        <h1>Farisha's Timetable</h1>
+        <p>CDCS 264 4A</p>
+        <p><i>Business Computing</i></p>
+        </center>
+        <tr>
+          <th>Day</th>
+          <th>8:00</th>
+          <th>9:00</th>
+          <th>10:00</th>
+          <th>11:00</th>
+          <th>12:00</th>
+          <th>13:00</th>
+          <th>14:00</th>
+          <th>15:00</th>
+          <th>16:00</th>
+          <th>17:00</th>
+          <th>18:00</th>
+        </tr>
+      <tbody>
+        <tr>
+          <th>Monday</th>
+          <td colspan="2">&nbsp;</td>
+          <td colspan="3"><a href="#isp581">ISP 581</a></td>
+          <td>&nbsp;</td>
+          <td colspan="3"><a href="#isp550">ISP 550</a></td>
+          <td colspan="3"><a href="#isp640">ISP 640</a></td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>      
+          <td colspan="3"><a href="#isp581">ISP 581</a></td>
+          <td colspan="3">&nbsp;</td>
+          <td colspan="3"><a href="#tkc451">TCK 451 <br>(Korean Language)</br></a></td>
+          <td colspan="3"><a href="#csc443">CSC 443</a></td>
+        </tr>
+        <tr>
+          <th>Wednesday</th>
+          <td colspan="3"><a href="#elc650">ELC 650</a></td>
+          <td colspan="2"><a href="#isp565">ISP 565</a></td>
+          <td>&nbsp;</td>
+          <td colspan="3"><a href="#isp550">ISP 550</a></td>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Thursday</th>
+          <td colspan="3"><a href="#isp640">ISP 640</a></td>
+          <td>&nbsp;</td>  
+          <td colspan="3"><a href="#csc443">CSC 443</a></td>
+          <td colspan="4">&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Friday</th>
+          <td colspan="3"><a href="#ctu554">CTU 554</a></td>
+          <td colspan="2"><a href="#isp565">ISP 565</a></td>  
+          <td colspan="6">&nbsp;</td>    
+        </tr>
+       
+      </tbody>
+    </table>
+	</center>
+</section>
+
+<section class="course-info-section">
+  <center>
+  <h1> Course Information</h1>
+  </center>
+  <div id="csc443">
+    <h4>CSC 443</h4>
+    <p>Course: WEB PROGRAMMING</p>
+    <p>Lecturer: AZIZIAN BIN MOHD SAPAWI</p>
+    <p>Lab Instructor: NUR AINA KHADIJAH BINTI ADNAN </p>
+  </div>
+  
+  <div id="ctu554">
+    <h4>CTU 554</h4>
+    <p>Course: VALUES AND CIVILIZATION II</p>
+    <p>Lecturer: NURUL FATHIN BINTI NGADIMAN	</p>
+  </div>
+
+  <div id="elc650">
+    <h4>ELC 650</h4>
+    <p>Course: ENGLISH FOR PROFESSIONAL INTERACTION</p>
+    <p>Lecturer: SOFEA AZLENA TUNG BINTI ADIB VINCENT TUNG	</p>
+  </div>
+  
+  <div id="isp550">
+    <h4>ISP 550</h4>
+    <p>Course: INFORMATION SYSTEMS ENGINEERING</p>
+    <p>Lecturer: DR. SURIYATI BINTI RAZALI		</p>
+  </div>
+  
+  <div id="isp565">
+    <h4>ISP 565</h4>
+    <p>Course: DATA MINING    </p>
+    <p>Lecturer: 	PROFESOR MADYA DR SHUZLINA BINTI ABDUL RAHMAN	</p>
+  </div>
+
+  <div id="isp581">
+    <h4>ISP 581</h4>
+    <p>Course: ENTERPRISE INFORMATION SYSTEMS    </p>
+    <p>Lecturer: DR. KAMALIA AZMA BINTI KAMARUDDIN			</p>
+  </div>
+
+  <div id="isp640">
+    <h4>ISP 6400</h4>
+    <p>Course: COMPUTING PROJECT MANAGEMENT    </p>
+    <p>Lecturer: PROFESOR MADYA DR NORJANSALIKA BINTI JANOM		</p>
+  </div>
+
+  <div id="tkc451">
+    <h4>TKC 451</h4>
+    <p>Course: INTRODUCTORY KOREAN (LEVEL II)    </p>
+    <p>Lecturer: PARK NA YOON		</p>
+  </div>
+</section>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				loadFooter();
+			});
+		</script>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>
+
