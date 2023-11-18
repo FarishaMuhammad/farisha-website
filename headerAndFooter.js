@@ -24,7 +24,7 @@ function loadHeader() {
                         </div>
                     </li>
                     <li><a href="https://farishamuhammad.github.io/farisha-website/index.html" class="nav-link"> Sign In </a></li>
-                    <li><a href="https://farishamuhammad.github.io/farisha-website/signIn.html" class="nav-link"> Sign Out </a></li>
+                    <li><a href="https://farishamuhammad.github.io/farisha-website/index.html" class="nav-link"> Sign Out </a></li>
                 </ul>
             </nav>
         </div>
