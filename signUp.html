@@ -66,56 +66,59 @@
 </head>
 <body>
 
-  <form id="signupForm" action="https://farishamuhammad.github.io/farisha-website/index.html" method="post">
-    <table>
-      <tr>
-        <th colspan="2">Sign Up Form</th>
-      </tr>
-      <tr>
-        <td>First Name:</td>
-        <td><input type="text" name="first_name" required></td>
-      </tr>
-      <tr>
-        <td>Last Name:</td>
-        <td><input type="text" name="last_name" required></td>
-      </tr>
-      <tr>
-        <td>Gender:</td>
-        <td>
-          <input type="radio" name="gender" value="male"> Male
-          <input type="radio" name="gender" value="female"> Female
-        </td>
-      </tr>
-      <tr>
-        <td>Email Address:</td>
-        <td><input type="email" name="email" required></td>
-      </tr>
-      <tr>
-        <td>Username:</td>
-        <td><input type="text" name="username" required></td>
-      </tr>
-      <tr>
-        <td>Password:</td>
-        <td><input type="password" name="password" required></td>
-      </tr>
-      <tr>
-        <td>Re-enter Password:</td>
-        <td><input type="password" name="re_password" required></td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <button type="submit" onclick="showNotification()">Sign Up</button>
-          <button type="reset">Reset</button>
-        </td>
-      </tr>
-    </table>
-  </form>
+<form>
+            <table>
+                <tr>
+                    <th colspan="2">Sign Up Form</th>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="first_name" required /></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="last_name" required /></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" /> Male
+                        <input type="radio" name="gender" value="female" /> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email Address:</td>
+                    <td><input type="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" required /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" required /></td>
+                </tr>
+                <tr>
+                    <td>Re-enter Password:</td>
+                    <td><input type="password" name="re_password" required /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="showNotification()">Sign Up</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
 
-  <script>
-    function showNotification() {
-      alert("Thank You! Sign up are successful!");
-    }
-  </script>
+        <script>
+            function showNotification() {
+                alert('Thank You! Sign up are successful!');
+                window.location.href =
+                    'https://farishamuhammad.github.io/farisha-website/index.html';
+            }
+        </script>
+
 
 </body>
 </html>
