@@ -18,7 +18,7 @@ function loadHeader() {
                             <a href="#"> Links </a>
                             <div class="dropdown-content">
                                 <a href="https://uitm.edu.my/" target="_blank">UiTM Website </a>
-                                <a href="https://kppim.uitm.edu.my target="_blank"/">KPPIM Website</a>
+                                <a href="https://kppim.uitm.edu.my/" target="_blank">KPPIM Website</a>
                                 <a href="https://istudent.uitm.edu.my/" target="_blank">i-Student Portal</a>
                             </div>
                         </div>
