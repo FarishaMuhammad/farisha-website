@@ -23,7 +23,7 @@ function loadHeader() {
                             </div>
                         </div>
                     </li>
-                    <li><a href="signIn.html" class="nav-link"> Sign In </a></li>
+                    <li><a href="index.html" class="nav-link"> Sign In </a></li>
                     <li><a href="signIn.html" class="nav-link"> Sign Out </a></li>
                 </ul>
             </nav>
