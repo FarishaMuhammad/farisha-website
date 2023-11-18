@@ -3,7 +3,7 @@ function loadHeader() {
 	var header = document.createElement('header');
 	header.innerHTML = `
     <link rel="stylesheet" href="styles.css" />
-        <a href="HP.html"> <img src="images/logo.png" alt="Logo">
+        <a href="https://farishamuhammad.github.io/farisha-website/HP.html"> <img src="images/logo.png" alt="Logo">
         </a>
         <div class="main-nav">
         
@@ -23,8 +23,8 @@ function loadHeader() {
                             </div>
                         </div>
                     </li>
-                    <li><a href="index.html" class="nav-link"> Sign In </a></li>
-                    <li><a href="signIn.html" class="nav-link"> Sign Out </a></li>
+                    <li><a href="https://farishamuhammad.github.io/farisha-website/index.html" class="nav-link"> Sign In </a></li>
+                    <li><a href="https://farishamuhammad.github.io/farisha-website/signIn.html" class="nav-link"> Sign Out </a></li>
                 </ul>
             </nav>
         </div>
